@@ -1,0 +1,147 @@
+/* ============= GLOBAL CSS =============== */
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 62.5% of 16px user agent font size is 10px */
+  font-size: 62.5%;
+}
+
+:root {
+  /* colors */
+  --primary-100: #dbeafe;
+  --primary-200: #bfdbfe;
+  --primary-300: #93c5fd;
+  --primary-400: #60a5fa;
+  --primary-500: #3b82f6;
+  --primary-600: #2563eb;
+  --primary-700: #1d4ed8;
+  --primary-800: #1e40af;
+  --primary-900: #1e3a8a;
+
+  /* grey */
+  --grey-50: #f8fafc;
+  --grey-100: #f1f5f9;
+  --grey-200: #e2e8f0;
+  --grey-300: #cbd5e1;
+  --grey-400: #94a3b8;
+  --grey-500: #64748b;
+  --grey-600: #475569;
+  --grey-700: #334155;
+  --grey-800: #1e293b;
+  --grey-900: #0f172a;
+  /* rest of the colors */
+  --black: #222;
+  --white: #fff;
+  --red-light: #fee2e2;
+  --red-dark: #b91c1c;
+  --green-light: #dcfce7;
+  --green-dark: #166534;
+
+  --small-text: 0.875rem;
+  --extra-small-text: 0.7em;
+  /* rest of the vars */
+  --backgroundColor: var(--grey-50);
+  --textColor: var(--grey-900);
+  --borderRadius: 0.5rem;
+  --letterSpacing: 1px;
+  --transition: 0.3s ease-in-out all;
+  --max-width: 1120px;
+  --fixed-width: 600px;
+
+  /* box shadow*/
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+body {
+  /* 16px */
+  font-size: 1.6rem;
+  background: var(--primary-200);
+  font-family: "Roboto", system-ui;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--textColor);
+}
+
+/* ============= APPLICATION CSS =============== */
+
+.container {
+  background-color: var(--grey-50);
+  width: 90vw;
+  max-width: var(--fixed-width);
+  margin: 6.4rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 2.4rem;
+  border-radius: var(--borderRadius);
+  box-shadow: var(--shadow-4);
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: var(--letterSpacing);
+}
+
+article {
+  display: flex;
+  align-items: center;
+
+  gap: 1.6rem;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+img {
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 50%;
+}
+
+h5 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.date {
+  font-size: 1.4rem;
+
+  text-transform: capitalize;
+  color: var(--grey-600);
+}
+
+.btn {
+  background-color: var(--primary-600);
+  color: var(--grey-50);
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  border: none;
+  border-radius: var(--borderRadius);
+  transition: var(--transition);
+  box-shadow: var(--shadow-2);
+}
+
+.btn:hover {
+  background-color: var(--primary-700);
+}
+
+@media screen {
+}
